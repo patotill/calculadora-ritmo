@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('Pistagemini.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    background-color: #1e1e24;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 340px; 
+    text-align: center;
+    border-top: 4px solid #00c4cc; 
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+label {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #9ca3af;
+}
+
+.tiempo-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a2a35;
+    border: 1px solid #3f3f4e;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; 
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #00c4cc;
+    box-shadow: 0 0 0 2px rgba(0, 196, 204, 0.2);
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+#distanciaPersonalizada {
+    margin-top: -10px;
+}
+
+button {
+    width: 100%; 
+    background: linear-gradient(135deg, #00c4cc, #007bf5);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 196, 204, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.oculto {
+    display: none !important;
+}
+
+#resultado {
+    background-color: #2a2a35;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #00e676; 
+    animation: aparecer 0.4s ease-out;
+}
+
+#resultado h2 {
+    font-size: 1rem;
+    color: #9ca3af;
+    margin: 0 0 10px 0;
+}
+
+#ritmoMostrado {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00e676;
+    margin: 0;
+}
+
+i.fa-solid {
+    color: #00c4cc;
+    margin-right: 8px;
+}
+
+h1 i.fa-solid {
+    color: #ffffff;
+}
+
+#resultado i.fa-solid {
+    color: #00e676;
+}
+
+button i.fa-solid {
+    color: #ffffff; 
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
