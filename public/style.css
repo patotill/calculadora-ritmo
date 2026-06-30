@@ -247,7 +247,10 @@ button:active {
 }
 
 button i.fa-solid {
-    color: #ffffff; 
+    color: #ffffff !important;
+    margin-right: 12px;        /* Espacio fijo para todos los iconos */
+    width: 20px;               /* Ancho fijo para que todos los iconos se alineen verticalmente */
+    text-align: center;        /* Centra el icono dentro de su propio ancho de 20px */
 }
 
 @keyframes aparecer {
